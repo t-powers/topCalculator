@@ -3,3 +3,7 @@ const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
+const firstInput = '';
+const operatorBtn = '';
+const secondInput = '';
+
