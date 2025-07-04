@@ -7,3 +7,9 @@ const firstInput = '';
 const operatorBtn = '';
 const secondInput = '';
 
+const operate = (x, y) => {
+    return add(x, y);
+};
+
+
+console.log(operate(1, 2));
