@@ -4,12 +4,11 @@ const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
 const firstInput = '';
-const operatorBtn = '';
+const operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
 const secondInput = '';
 
-const operate = (x, y) => {
-    return add(x, y);
+const calculateInputs = (firstInput, secondInput) => {
+    const operation = add(firstInput, secondInput);
+    return (`${firstInput} ${operatorBtn.add} ${secondInput} = ${operation}`);
 };
-
-
-console.log(operate(1, 2));
+console.log(calculateInputs(99, 2));
