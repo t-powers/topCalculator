@@ -11,4 +11,6 @@ const calculateInputs = (firstInput, secondInput) => {
     const operation = add(firstInput, secondInput);
     return (`${firstInput} ${operatorBtn.add} ${secondInput} = ${operation}`);
 };
-console.log(calculateInputs(99, 2));
+
+const displayResults = document.getElementById('#viewCalculation');
+displayResults.textContent = calculateInputs.toString(5, 5);
