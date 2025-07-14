@@ -7,10 +7,12 @@ const firstInput = '';
 const operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
 const secondInput = '';
 
+
 const calculateInputs = (firstInput, secondInput) => {
-    const operation = add(firstInput, secondInput);
-    return (`${firstInput} ${operatorBtn.add} ${secondInput} = ${operation}`);
+    return add(firstInput, secondInput);
+
 };
 
-const displayResults = document.getElementById('#viewCalculation');
-displayResults.textContent = calculateInputs.toString(5, 5);
+const displayResults = document.getElementById('viewCalculation');
+displayResults.textContent = calculateInputs(2, 3);
+
