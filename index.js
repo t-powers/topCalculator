@@ -3,16 +3,20 @@ const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
-const firstInput = '';
+const firstInput = 5;
 const operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
-const secondInput = '';
+const secondInput = 550;
 
 
 const calculateInputs = (firstInput, secondInput) => {
     return add(firstInput, secondInput);
 
 };
+const bothInput = (firstInput, secondInput) => {
+    return `${firstInput} ${operatorBtn.add} ${secondInput} = `;
+};
 
 const displayResults = document.getElementById('viewCalculation');
-displayResults.textContent = calculateInputs(2, 3);
+displayResults.textContent = bothInput(firstInput, secondInput) + calculateInputs(firstInput, secondInput);
+
 
