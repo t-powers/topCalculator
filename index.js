@@ -3,18 +3,17 @@ const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
-let firstInput = '';
+let firstInput = 55;
 let operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
-let secondInput = '';
+let secondInput = 5;
 
-const clickDigits = document.getElementById('[digits]');
+const clickDigits = document.getElementsByClassName('digits');
 const output = document.getElementById('viewCalculation');
-
 
 const calculateInputs = (firstInput, secondInput) => {
     return add(firstInput, secondInput);
+};
+const operate = () => {
+    return `${firstInput} ${operatorBtn.add} ${secondInput} = ` + add(firstInput, secondInput);
+};
 
-};
-const operate = (firstInput, secondInput) => {
-    return `${firstInput} ${operatorBtn.add} ${secondInput} = `;
-};
