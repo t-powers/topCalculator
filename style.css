@@ -59,21 +59,26 @@ header {
     display: flex;
     justify-content: center;
     font-size: x-large;
+    margin-bottom: 2rem;
 }
 
-#calculator {
+#viewCalculation, #calculator {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     min-width: auto;
-
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid red;
-
-
 }
+
+#viewCalculation {
+    font-size: 3rem;
+    font-weight: inherit;
+}
+
 
 .digits, .functions {
     margin: 5px;

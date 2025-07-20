@@ -9,6 +9,7 @@ let secondInput = 5;
 
 const clickDigits = document.getElementsByClassName('digits');
 const output = document.getElementById('viewCalculation');
+output.textContent = 43243;
 
 const calculateInputs = (firstInput, secondInput) => {
     return add(firstInput, secondInput);
