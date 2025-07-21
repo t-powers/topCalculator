@@ -7,9 +7,16 @@ let firstInput = 55;
 let operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
 let secondInput = 5;
 
-const clickDigits = document.getElementsByClassName('digits');
-const output = document.getElementById('viewCalculation');
-output.textContent = 43243;
+const clickDigits = document.querySelectorAll('.digits');
+const viewCalculation = document.getElementById('viewCalculation');
+
+
+clickDigits.forEach(button => {
+    button.addEventListener('click', e => {
+        viewCalculation.textContent = e.target.textContent;
+    });
+});
+
 
 const calculateInputs = (firstInput, secondInput) => {
     return add(firstInput, secondInput);
@@ -17,4 +24,6 @@ const calculateInputs = (firstInput, secondInput) => {
 const operate = () => {
     return `${firstInput} ${operatorBtn.add} ${secondInput} = ` + add(firstInput, secondInput);
 };
+
+
 
