@@ -3,19 +3,12 @@ const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
-let firstInput = 55;
+let firstInput = '';
 let operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
-let secondInput = 5;
+let secondInput = '';
 
 const clickDigits = document.querySelectorAll('.digits');
 const viewCalculation = document.getElementById('viewCalculation');
-
-
-clickDigits.forEach(button => {
-    button.addEventListener('click', e => {
-        viewCalculation.textContent = e.target.textContent;
-    });
-});
 
 
 const calculateInputs = (firstInput, secondInput) => {
