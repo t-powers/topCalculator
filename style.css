@@ -77,6 +77,9 @@ header {
 #viewCalculation {
     font-size: 3rem;
     font-weight: inherit;
+    min-height: 85px;
+    background-color: #b2deef;
+
 }
 
 
