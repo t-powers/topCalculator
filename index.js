@@ -3,10 +3,12 @@ const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
+// {add: '+', subtract: '-', multiply: '*', divide: '/'};
+
 
 // #2 variables for numbers and operator
 let firstInput = '';
-let operatorBtn = {add: '+', subtract: '-', multiply: '*', divide: '/'};
+let operatorBtn = '';
 let secondInput = '';
 
 // snagged digit button elements
@@ -17,26 +19,13 @@ const clickFunctions = document.querySelectorAll('.functions');
 const viewCalculation = document.getElementById('viewCalculation');
 
 // #3
+const operate = (e) => {
+    const targetValue = e.target.textContent;
+    viewCalculation.textContent += targetValue;
+};
 
-clickDigits.forEach(digit => {
-    digit.addEventListener('click', (e) => {
-        const targetValue = e.target.textContent;
-        viewCalculation.textContent += targetValue;
-
+clickDigits.forEach(clickDigit => {
+    clickDigit.addEventListener('click', (e) => {
+        operate(e);
     });
 });
-
-clickFunctions.forEach(symbols => {
-    symbols.addEventListener('click', (e) => {
-        const targetValue = e.target.textContent;
-        viewCalculation.textContent += targetValue;
-
-    });
-});
-
-
-
-
-
-
-
