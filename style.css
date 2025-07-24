@@ -20,6 +20,7 @@ body {
     line-height: 1.5;
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    background-color: #F4B266;
 }
 
 /* 6. Improve media defaults */
@@ -55,11 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     font-size: x-large;
     margin-bottom: 2rem;
+    padding: 50px 0px;
 }
 
 #viewCalculation, #calculator {
@@ -71,15 +72,18 @@ header {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
+    border: 1px solid #413a3a;
+    background-color: #808F87;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #viewCalculation {
     font-size: 3rem;
     font-weight: inherit;
     min-height: 85px;
-    background-color: #b2deef;
-
+    background-color: #b8b8bb;
+    border-radius: 10px;
 }
 
 
@@ -91,18 +95,17 @@ header {
     font-size: 2em;
     font-weight: bold;
     border-radius: 50%;
-    background-color: #4CAF50;
-    color: white;
+    color: #9B7E46;
     text-align: center;
     cursor: pointer;
 }
 
 .digits {
-    background-color: #119DA4;
+    background-color: #E2EFDE;
 
 }
 
 .operators {
-    background-color: #0C7489;
+    background-color: #AFD0BF;
 
 }
