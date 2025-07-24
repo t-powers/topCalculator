@@ -14,8 +14,7 @@ let secondInput = '';
 // snagged digit button elements
 const clickDigits = document.querySelectorAll('.digits');
 // grabbed calculator functions
-const clickFunctions = document.querySelectorAll('.functions');
-// got calculator's screen
+
 const viewCalculation = document.getElementById('viewCalculation');
 
 // #3

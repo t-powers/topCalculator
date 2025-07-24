@@ -83,7 +83,7 @@ header {
 }
 
 
-.digits, .functions {
+.digits, .digits {
     margin: 5px;
     height: 80px;
     line-height: 80px;
@@ -102,7 +102,7 @@ header {
 
 }
 
-.functions {
+.digits {
     background-color: #0C7489;
 
 }
