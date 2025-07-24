@@ -1,5 +1,7 @@
-let firstInput = 1;
-let secondInput = 2;
+let firstOperand = '';
+let secondOperand = '';
+let inputOperator = '';
+const viewDisplay = document.getElementById('viewCalculation');
 
 
 const operatorFunctions = {
