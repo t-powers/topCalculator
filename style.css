@@ -83,7 +83,7 @@ header {
 }
 
 
-.digits, .digits {
+.digits, .operator {
     margin: 5px;
     height: 80px;
     line-height: 80px;
@@ -102,7 +102,7 @@ header {
 
 }
 
-.digits {
+.operator {
     background-color: #0C7489;
 
 }
