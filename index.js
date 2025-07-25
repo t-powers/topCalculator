@@ -1,27 +1,13 @@
-let firstOperand = '';
-let secondOperand = '';
-let inputOperator = '';
+let firstOperand = 0;
+let secondOperand = null;
+let inputOperator = null;
 const viewDisplay = document.getElementById('viewCalculation');
 const digits = document.querySelectorAll('.digits');
+const operators = document.querySelectorAll('.operators');
 
-digits.forEach(digit => {
-    digit.addEventListener('click', (e) => {
-        const firstOperand = e.target.textContent;
-        viewDisplay.textContent = firstOperand;
-        console.log(firstOperand);
-
-    });
-});
-
-digits.forEach(digit => {
-    digit.addEventListener('click', (e) => {
-        const firstOperand = e.target.textContent;
-        viewDisplay.textContent = firstOperand;
-        console.log(firstOperand);
-
-    });
-});
-
+const initialValue = () => {
+    viewDisplay.textContent = firstOperand;
+};
 
 const operatorFunctions = {
     '+': (firstInput, secondInput) => {
@@ -37,6 +23,5 @@ const operatorFunctions = {
         return firstInput / secondInput;
     }
 };
-
 
 
