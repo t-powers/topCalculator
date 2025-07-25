@@ -6,7 +6,19 @@ const digits = document.querySelectorAll('.digits');
 
 digits.forEach(digit => {
     digit.addEventListener('click', (e) => {
-        console.log(e.target.textContent);
+        const firstOperand = e.target.textContent;
+        viewDisplay.textContent = firstOperand;
+        console.log(firstOperand);
+
+    });
+});
+
+digits.forEach(digit => {
+    digit.addEventListener('click', (e) => {
+        const firstOperand = e.target.textContent;
+        viewDisplay.textContent = firstOperand;
+        console.log(firstOperand);
+
     });
 });
 
@@ -25,4 +37,6 @@ const operatorFunctions = {
         return firstInput / secondInput;
     }
 };
+
+
 
