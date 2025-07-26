@@ -1,13 +1,9 @@
-let firstOperand = 0;
+let firstOperand = null;
 let secondOperand = null;
 let inputOperator = null;
 const viewDisplay = document.getElementById('viewCalculation');
 const digits = document.querySelectorAll('.digits');
 const operators = document.querySelectorAll('.operators');
-
-const initialValue = () => {
-    viewDisplay.textContent = firstOperand;
-};
 
 const operatorFunctions = {
     '+': (firstInput, secondInput) => {
@@ -24,4 +20,10 @@ const operatorFunctions = {
     }
 };
 
+operators.forEach(operator => {
+    operator.addEventListener('click', (e) => {
+        const operatorTarget = e.target.textContent;
+        viewDisplay.textContent = operatorTarget;
 
+    });
+});
