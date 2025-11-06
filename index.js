@@ -8,8 +8,6 @@ const buttonValues = [
 const rightSymbols = ['÷', '×', '-', '+', '='];
 const topSymbols = ['AC', '+/-', '%'];
 
-const display = document.getElementById('display');
-
 let firstOperand = 0;
 let operator = null;
 let secondOperand = null;
@@ -18,19 +16,18 @@ function clearAll() {
     let firstOperand = 0;
     let operator = null;
     let secondOperand = null;
-
 }
 
 for (let i = 0; i < buttonValues.length; i++) {
+
     const button = document.createElement('button');
     const value = buttonValues[i];
     button.innerText = value;
-
     if (value === 0) {
+
         button.style.width = '200px';
         button.style.gridColumn = 'span 2';
     }
-
     button.addEventListener('click', () => {
         if (rightSymbols.includes(value)) {
             if (value === '=') {
