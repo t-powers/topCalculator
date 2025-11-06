@@ -8,6 +8,7 @@
 }
 
 #display {
+    background-color: grey;
     text-align: right;
     color: black;
     font-size: 75px;
