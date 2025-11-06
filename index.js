@@ -88,6 +88,8 @@ for (let i = 0; i < buttonValues.length; i++) {
         }
     });
 
+    const display = document.getElementById('display');
+
     document.getElementById('buttons').appendChild(button);
 
 }
